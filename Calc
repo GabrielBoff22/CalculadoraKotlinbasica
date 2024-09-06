@@ -1,0 +1,19 @@
+fun main(){
+println("Digite o primeiro numero")
+var a = readLine()?.toIntOrNull() ?: 0
+    println("Digite o segundo numero")
+var b = readLine()?.toIntOrNull() ?: 0
+
+val soma = a+b
+    val subtracao = a-b
+    val multiplicacao = a*b
+    val divisao = if (b != 0) {
+        a/b
+    } else {
+        println("impossivel dividir por 0")
+    }
+println("O resultado é $soma")
+    println("O resultado é $subtracao")
+    println("O resultado é $divisao")
+    println("O resultado é $multiplicacao")
+    return
